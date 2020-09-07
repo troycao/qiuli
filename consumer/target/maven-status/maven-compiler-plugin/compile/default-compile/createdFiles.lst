@@ -1,0 +1,5 @@
+com\troy\qiuli\consumer\mq\rocketmq\service\ParamConfigService.class
+com\troy\qiuli\consumer\ConsumerApplication.class
+com\troy\qiuli\consumer\mq\rocketmq\RocketMQOrderListener.class
+com\troy\qiuli\consumer\mq\rocketmq\config\ConsumerConfig.class
+com\troy\qiuli\consumer\mq\rocketmq\RocketMsgListener.class

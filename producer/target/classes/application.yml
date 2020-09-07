@@ -1,0 +1,100 @@
+server:
+  port: 9100
+
+spring:
+  application:
+    name: qiuli-producer
+  profiles:
+    active: dev
+
+mybatis:
+  #mapper.xml文件位置  Maven 多模块项目的扫描路径需以 classpath*: 开头 （即加载多个 jar 包下的 XML 文件）
+  mapperLocations: classpath*:mapper/*.xml
+  configuration:
+    # 开启驼峰和下划线映射
+    map-underscore-to-camel-case: true
+    # 关闭映射器配置的缓存(这样在mapper.xml中做的缓存处理就会失效)
+    cache-enabled: false
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.56.100:3306/troydb?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    #Spring Boot 默认是不注入这些属性值的，需要自己绑定
+    #druid 数据源专有配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    # 打开PSCache
+    poolPreparedStatements: true
+    #配置监控统计拦截的filters，stat:监控统计、log4j：日志记录、wall：防御sql注入
+    #如果运行时报错  java.lang.ClassNotFoundException: org.apache.log4j.Priority
+    #则导入 log4j 依赖即可，Maven 地址： https://mvnrepository.com/artifact/log4j/log4j
+    filters: stat,wall,log4j,config
+    #指定每个连接上PSCache的大小
+    maxPoolPreparedStatementPerConnectionSize: 20
+    #合并多个DruidDataSource的监控数据
+    useGlobalDataSourceStat: true
+    #通过connectProperties属性来打开mergeSql功能；慢SQL记录
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  # redis配置
+  redis:
+    host: 192.168.56.100
+    database: 1
+    port: 6379
+    #password: 123456
+    timeout: 1s
+    jedis:
+      pool:
+        max-active: 20
+        max-idle: 20
+        min-idle: 10
+        max-wait: -1ms
+  cache:
+    redis:
+      use-key-prefix: true
+      key-prefix: dev
+      cache-null-values: false
+      time-to-live: 20s
+
+rocketmq:
+  # 生产者配置
+  producer:
+    isOnOff: on
+    # 发送同一类消息的设置为同一个group，保证唯一
+    groupName: TroyGroup
+    # 服务地址
+    namesrvAddr: 192.168.56.100:9876
+    # 消息最大长度 默认1024*4(4M)
+    maxMessageSize: 4096
+    # 发送消息超时时间,默认3000
+    sendMsgTimeout: 3000
+    # 发送消息失败重试次数，默认2
+    retryTimesWhenSendFailed: 2
+
+xxl:
+  job:
+    admin:
+      addresses: http://192.168.56.100:8001/xxl-job-admin
+    accessToken:
+    executor:
+      appname: qiuli
+      ip:
+      port: 9999
+      logpath: data/applogs/xxl-job/jobhandler
+      logretentiondays: 30

@@ -1,0 +1,6 @@
+com\troy\qiuli\bo\UserBO.class
+com\troy\qiuli\bo\GoodsOrderBO.class
+com\troy\qiuli\common\enums\MQEnum$Tags.class
+com\troy\qiuli\common\enums\MQEnum$Group.class
+com\troy\qiuli\common\enums\MQEnum.class
+com\troy\qiuli\common\enums\MQEnum$Topic.class

@@ -1,0 +1,11 @@
+com\troy\qiuli\producer\mq\rocketmq\config\ProducerConfig.class
+com\troy\qiuli\producer\mq\rocketmq\product\RocketMQProducer.class
+com\troy\qiuli\producer\mq\rocketmq\service\impl\RocketMqServiceImpl.class
+com\troy\qiuli\producer\mq\rocketmq\service\RocketMqService.class
+com\troy\qiuli\producer\redis\service\impl\RedisServiceImpl.class
+com\troy\qiuli\producer\mq\rocketmq\controller\SendController.class
+com\troy\qiuli\producer\job\xxl\config\XxlJobConfig.class
+com\troy\qiuli\producer\job\xxl\service\DemoService.class
+com\troy\qiuli\producer\redis\config\RedisConfig.class
+com\troy\qiuli\producer\ProducerApplication.class
+com\troy\qiuli\producer\redis\service\IRedisService.class

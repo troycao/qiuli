@@ -1,0 +1,73 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: qiuli-consumer
+  profiles:
+    active: dev
+
+mybatis:
+  #mapper.xml文件位置  Maven 多模块项目的扫描路径需以 classpath*: 开头 （即加载多个 jar 包下的 XML 文件）
+  mapperLocations: classpath*:mapper/*.xml
+  configuration:
+    # 开启驼峰和下划线映射
+    map-underscore-to-camel-case: true
+    # 关闭映射器配置的缓存(这样在mapper.xml中做的缓存处理就会失效)
+    cache-enabled: false
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.56.100:3306/troydb?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    #Spring Boot 默认是不注入这些属性值的，需要自己绑定
+    #druid 数据源专有配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    # 打开PSCache
+    poolPreparedStatements: true
+    #配置监控统计拦截的filters，stat:监控统计、log4j：日志记录、wall：防御sql注入
+    #如果运行时报错  java.lang.ClassNotFoundException: org.apache.log4j.Priority
+    #则导入 log4j 依赖即可，Maven 地址： https://mvnrepository.com/artifact/log4j/log4j
+    filters: stat,wall,log4j,config
+    #指定每个连接上PSCache的大小
+    maxPoolPreparedStatementPerConnectionSize: 20
+    #合并多个DruidDataSource的监控数据
+    useGlobalDataSourceStat: true
+    #通过connectProperties属性来打开mergeSql功能；慢SQL记录
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+# 配置 Group  Topic  Tag
+rocketmq:
+  group: rocketGroup
+  topic: rocketTopic
+  tag: rocketTag
+  # 消费者配置
+  consumer:
+    isOnOff: on
+    # 官方建议：确保同一组中的每个消费者订阅相同的主题。
+    groupName: TroyGroup
+    # 服务地址
+    namesrvAddr: 192.168.56.100:9876
+    # 接收该 Topic 下所有 Tag
+    topics: TROY_QIULI_ORDER_SYNC_TOPIC~*;
+    consumeThreadMin: 20
+    consumeThreadMax: 64
+    # 设置一次消费消息的条数，默认为1条
+    consumeMessageBatchMaxSize: 1

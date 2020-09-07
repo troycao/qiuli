@@ -1,0 +1,16 @@
+2020-09-03 17:40:31 [com.xxl.job.core.thread.JobThread#run]-[124]-[Thread-30] <br>----------- xxl-job job execute start -----------<br>----------- Param:
+2020-09-03 17:40:31 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[24]-[Thread-30] XXL-JOB, Hello World.
+2020-09-03 17:40:31 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-30] beat at:0
+2020-09-03 17:40:33 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-30] beat at:1
+2020-09-03 17:40:35 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-30] beat at:2
+2020-09-03 17:40:37 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-30] beat at:3
+2020-09-03 17:40:39 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-30] beat at:4
+2020-09-03 17:40:41 [com.xxl.job.core.thread.JobThread#run]-[164]-[Thread-30] <br>----------- xxl-job job execute end(finish) -----------<br>----------- ReturnT:ReturnT [code=200, msg=null, content=null]
+2020-09-03 17:40:41 [com.xxl.job.core.thread.TriggerCallbackThread#callbackLog]-[191]-[xxl-job, executor TriggerCallbackThread] <br>----------- xxl-job job callback finish.
+2020-09-03 17:41:20 [com.xxl.job.core.thread.JobThread#run]-[175]-[Thread-30] <br>----------- JobThread toStop, stopReason:web container destroy and kill the job.
+2020-09-03 17:41:20 [com.xxl.job.core.thread.JobThread#run]-[183]-[Thread-30] <br>----------- JobThread Exception:java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.xxl.job.core.thread.JobThread.run(JobThread.java:112)
+<br>----------- xxl-job job execute end(error) -----------
