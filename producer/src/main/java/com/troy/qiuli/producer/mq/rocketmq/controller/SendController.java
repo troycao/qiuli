@@ -3,15 +3,13 @@ package com.troy.qiuli.producer.mq.rocketmq.controller;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
 import com.troy.qiuli.bo.GoodsOrderBO;
-import com.troy.qiuli.dao.entity.GoodsOrder;
+import com.troy.qiuli.common.Result;
 import com.troy.qiuli.producer.mq.rocketmq.service.RocketMqService;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 /**
@@ -26,7 +24,7 @@ public class SendController {
     RocketMqService rocketMqService;
 
     @RequestMapping("/sendOrder")
-    public SendResult sendOrder (){
+    public Result<?> sendOrder (){
         SendResult sendResult = null;
         try {
             for (int i = 0; i < 1; i++) {
@@ -43,11 +41,11 @@ public class SendController {
                         "张三"
                         ,1L);
 
-                sendResult = rocketMqService.createGoodsOrder(goodsOrderBO) ;
+                rocketMqService.createGoodsOrder(goodsOrderBO) ;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return sendResult ;
+        return Result.success();
     }
 }

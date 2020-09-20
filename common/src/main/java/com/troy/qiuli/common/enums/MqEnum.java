@@ -8,13 +8,13 @@ import lombok.Getter;
  * @date 2020-09-01 19:42
  * @desc
  */
-public interface MQEnum {
+public interface MqEnum {
 
     @Getter
     @AllArgsConstructor
     enum Group {
         /// 组
-        TROY_QIULI_ORDER_META("TROY_QIULI_ORDER_GROUP", "META-ORDER组"),
+        TROY_QIULI_ORDER_GROUP("TROY_QIULI_ORDER_GROUP", "ORDER组"),
         ;
 
         public String name;
@@ -26,7 +26,7 @@ public interface MQEnum {
     @AllArgsConstructor
     enum Topic {
 
-        TROY_QIULI_ORDER_SYNC("TROY_QIULI_ORDER_SYNC_TOPIC", "订单Topic"),
+        TROY_QIULI_ORDER_SYNC_TOPIC("TROY_QIULI_ORDER_SYNC_TOPIC", "订单Topic"),
         ;
 
         public String name;
@@ -38,7 +38,7 @@ public interface MQEnum {
     @AllArgsConstructor
     enum Tags {
 
-        TROY_QIULI_ORDER_TO_CONSUMER("TROY_QIULI_ORDER_TO_CONSUMER_TAG", "订单发送给消费者")
+        TROY_QIULI_ORDER_TO_CONSUMER_TAG("TROY_QIULI_ORDER_TO_CONSUMER_TAG", "订单发送给消费者")
         ;
 
         public String name;

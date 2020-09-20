@@ -1,9 +1,0 @@
-2020-09-03 19:15:08 [com.xxl.job.core.thread.JobThread#run]-[124]-[Thread-32] <br>----------- xxl-job job execute start -----------<br>----------- Param:
-2020-09-03 19:15:08 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[24]-[Thread-32] XXL-JOB, Hello World.
-2020-09-03 19:15:08 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-32] beat at:0
-2020-09-03 19:15:10 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-32] beat at:1
-2020-09-03 19:15:12 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-32] beat at:2
-2020-09-03 19:15:14 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-32] beat at:3
-2020-09-03 19:15:16 [com.troy.qiuli.producer.job.xxl.service.DemoService#demoJobHandler]-[27]-[Thread-32] beat at:4
-2020-09-03 19:15:18 [com.xxl.job.core.thread.JobThread#run]-[164]-[Thread-32] <br>----------- xxl-job job execute end(finish) -----------<br>----------- ReturnT:ReturnT [code=200, msg=null, content=null]
-2020-09-03 19:15:18 [com.xxl.job.core.thread.TriggerCallbackThread#callbackLog]-[191]-[xxl-job, executor TriggerCallbackThread] <br>----------- xxl-job job callback finish.

@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef729bcf-78ef-4b43-b1db-33649209436e" name="Default Changelist" comment="" />
+    <list default="true" id="ef729bcf-78ef-4b43-b1db-33649209436e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/enums/CodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/exception/QiuLiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/dto/GoodsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/dto/GoodsOrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/convert/GoodsOrderConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/mq/AbstractConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/mq/OrderSyncConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/enums/MQEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/enums/MqEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/RocketMQOrderListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/RocketMsgListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/config/ConsumerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/job/xxl/service/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/job/xxl/service/DemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/controller/SendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/controller/SendController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/product/RocketMQProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/product/RocketMqProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/RocketMqService.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/RocketMqService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/RocketMqServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/RocketMqServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +54,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gqQYwXERZ5hSBHpBCj0QyirfMw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-generator/src/main/java/coam/troy/qiuli/generator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lingxu" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -37,9 +80,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.troy.qiuli.common.exception" />
+      <recent name="com.troy.qiuli.common.enums" />
+      <recent name="com.troy.qiuli.common" />
       <recent name="com.troy.qiuli.consumer.mq.rocketmq" />
       <recent name="com.troy.qiuli.dao" />
-      <recent name="com.troy.qiuli.producer.mq.rocketmq.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\project\qiuli\mybatis-generator\src\main\java\coam\troy\qiuli\generator" />
@@ -157,22 +202,35 @@
       <workItem from="1599095001782" duration="1631000" />
       <workItem from="1599103114512" duration="14335000" />
       <workItem from="1599181376869" duration="1354000" />
-      <workItem from="1599441261883" duration="705000" />
+      <workItem from="1599441261883" duration="1310000" />
+      <workItem from="1599699844774" duration="1274000" />
+      <workItem from="1600589362527" duration="7650000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1599114380652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1599114380652" />
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1599117147322">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1600595251791">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599117147322" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600595251791" />
     <state x="473" y="183" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1599012209312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -189,10 +247,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599017552482" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599016694551">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600597808808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599016694551" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600597808808" />
     <state width="1203" height="248" key="GridCell.Tab.0.bottom" timestamp="1599139921386">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -253,21 +311,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1598854058253" />
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600597931742">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600597931742" />
     <state x="468" y="115" width="604" height="594" key="find.popup" timestamp="1599113968459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="468" y="115" width="604" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599113968459" />
-    <state x="178" y="73" key="new project wizard" timestamp="1598953811220">
+    <state x="178" y="73" key="new project wizard" timestamp="1599700689467">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1598953811220" />
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599700689467" />
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1599113964929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1599113964929" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599114202331">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600593312588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599114202331" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600593312588" />
   </component>
 </project>

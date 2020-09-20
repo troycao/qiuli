@@ -10,6 +10,6 @@ import org.apache.rocketmq.client.producer.SendResult;
  */
 public interface RocketMqService {
 
-    SendResult createGoodsOrder(GoodsOrderBO goodsOrderBO) throws Exception;
+    void createGoodsOrder(GoodsOrderBO goodsOrderBO) throws Exception;
 
 }

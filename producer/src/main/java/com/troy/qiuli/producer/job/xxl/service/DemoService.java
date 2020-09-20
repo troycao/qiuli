@@ -15,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class DemoService {
 
-
     /**
      * 1、简单任务示例（Bean模式）
      */
@@ -27,6 +26,7 @@ public class DemoService {
             XxlJobLogger.log("beat at:" + i);
             TimeUnit.SECONDS.sleep(2);
         }
+
         System.out.println("================test================");
         return ReturnT.SUCCESS;
     }

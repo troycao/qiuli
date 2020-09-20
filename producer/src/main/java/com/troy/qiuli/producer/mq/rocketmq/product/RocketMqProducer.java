@@ -1,6 +1,6 @@
 package com.troy.qiuli.producer.mq.rocketmq.product;
 
-import com.troy.qiuli.common.enums.MQEnum;
+import com.troy.qiuli.common.enums.MqEnum;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
@@ -16,7 +16,7 @@ import javax.annotation.PostConstruct;
  * @desc
  */
 @Component
-public class RocketMQProducer {
+public class RocketMqProducer {
 
     @Autowired
     private DefaultMQProducer producer;
@@ -26,7 +26,7 @@ public class RocketMQProducer {
         producer.setVipChannelEnabled(false);
     }
 
-    /*public void send(MQEnum.Topic topic, MQEnum.Tags tags, String msg, String keys) {
+    public void send(MqEnum.Topic topic, MqEnum.Tags tags, String msg, String keys) {
         try {
             System.out.println("[MQ]发送MQ消息内容:{}" + msg);
             Message message = new Message(topic.getName(), tags.getName(), msg.getBytes(RemotingHelper.DEFAULT_CHARSET));
@@ -36,21 +36,6 @@ public class RocketMQProducer {
         } catch (Exception e) {
             System.out.println("[MQ]发送消息异常" + e);
         }
-    }*/
-
-    public SendResult send(MQEnum.Topic topic, MQEnum.Tags tags, String msg, String keys) {
-        SendResult result = null;
-        try {
-            System.out.println("[MQ]发送MQ消息内容:{}" + msg);
-            Message message = new Message(topic.getName(), tags.getName(), msg.getBytes(RemotingHelper.DEFAULT_CHARSET));
-            message.setKeys(keys);
-            result = producer.send(message);
-            System.out.println("[MQ]发送响应,MsgId:{},发送状态:{}" + result.getMsgId());
-
-        } catch (Exception e) {
-            System.out.println("[MQ]发送消息异常" + e);
-        }
-        return result;
     }
 
 }
