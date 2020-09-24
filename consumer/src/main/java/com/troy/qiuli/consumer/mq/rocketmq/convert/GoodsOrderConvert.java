@@ -18,7 +18,9 @@ public class GoodsOrderConvert {
      */
     public static GoodsOrder goodsOrderDto2Bo(GoodsOrderDto goodsOrderDto) {
         GoodsOrder goodsOrder = new GoodsOrder();
-        BeanUtils.copyProperties(goodsOrder, goodsOrderDto);
+        BeanUtils.copyProperties(goodsOrderDto, goodsOrder);
         return goodsOrder;
     }
+
+
 }

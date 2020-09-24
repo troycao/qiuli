@@ -52,6 +52,19 @@ spring:
     useGlobalDataSourceStat: true
     #通过connectProperties属性来打开mergeSql功能；慢SQL记录
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  # redis配置
+  redis:
+    host: 192.168.56.100
+    database: 1
+    port: 6379
+    #password: 123456
+    timeout: 1s
+    jedis:
+      pool:
+        max-active: 20
+        max-idle: 20
+        min-idle: 10
+        max-wait: -1ms
 
 # 配置 Group  Topic  Tag
 rocketmq:
@@ -61,8 +74,6 @@ rocketmq:
   # 消费者配置
   consumer:
     isOnOff: on
-    # 官方建议：确保同一组中的每个消费者订阅相同的主题。
-    groupName: TroyGroup
     # 服务地址
     namesrvAddr: 192.168.56.100:9876
     # 接收该 Topic 下所有 Tag

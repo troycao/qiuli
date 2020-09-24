@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @desc
  */
 
-@Configuration
+//@Configuration
 public class XxlJobConfig {
 
     @Value("${xxl.job.admin.addresses:}")

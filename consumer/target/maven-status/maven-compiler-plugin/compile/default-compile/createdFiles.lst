@@ -1,5 +1,6 @@
-com\troy\qiuli\consumer\mq\rocketmq\service\ParamConfigService.class
+com\troy\qiuli\consumer\mq\rocketmq\mq\OrderSyncConsumer.class
+com\troy\qiuli\consumer\mq\rocketmq\service\StockService.class
+com\troy\qiuli\consumer\mq\rocketmq\convert\GoodsOrderConvert.class
+com\troy\qiuli\consumer\mq\rocketmq\mq\AbstractConsumer.class
 com\troy\qiuli\consumer\ConsumerApplication.class
-com\troy\qiuli\consumer\mq\rocketmq\RocketMQOrderListener.class
-com\troy\qiuli\consumer\mq\rocketmq\config\ConsumerConfig.class
-com\troy\qiuli\consumer\mq\rocketmq\RocketMsgListener.class
+com\troy\qiuli\consumer\mq\rocketmq\service\impl\StockServiceImpl.class

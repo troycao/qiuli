@@ -64,4 +64,8 @@ public interface StockMapper {
      * @mbggenerated Wed Sep 02 09:52:05 CST 2020
      */
     int updateByExample(@Param("record") Stock record, @Param("example") StockExample example);
+
+    Stock selectForUpdate(@Param("goodsId") Long goodsId);
+
+    int updateBySelective(@Param("record") Stock record);
 }

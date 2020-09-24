@@ -18,6 +18,11 @@ public class QiuLiException extends RuntimeException {
         this.code = codeEnum.getCode();
     }
 
+    public QiuLiException(CodeEnum codeEnum,String message){
+        super(codeEnum.getMessage() + ":" + message);
+        this.code = codeEnum.getCode();
+    }
+
 
 
 }

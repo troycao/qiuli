@@ -1,16 +1,20 @@
 package com.troy.qiuli.consumer.mq.rocketmq.mq;
 
 import com.alibaba.fastjson.JSONObject;
+import com.troy.qiuli.common.constants.RedisKeys;
 import com.troy.qiuli.common.enums.MqEnum;
+import com.troy.qiuli.common.redis.RedisUtil;
 import com.troy.qiuli.consumer.mq.rocketmq.convert.GoodsOrderConvert;
-import com.troy.qiuli.consumer.mq.rocketmq.service.OrderService;
+import com.troy.qiuli.consumer.mq.rocketmq.service.StockService;
 import com.troy.qiuli.dao.entity.GoodsOrder;
+import com.troy.qiuli.dao.entity.Stock;
 import com.troy.qiuli.dto.GoodsOrderDto;
 import org.apache.logging.log4j.util.Strings;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
 import org.apache.rocketmq.common.message.MessageExt;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
@@ -19,6 +23,7 @@ import java.util.Objects;
  * @date 2020-09-20 17:16
  * @desc
  */
+@Component
 public class OrderSyncConsumer extends AbstractConsumer{
 
     @Override
@@ -37,7 +42,10 @@ public class OrderSyncConsumer extends AbstractConsumer{
     }
 
     @Autowired
-    OrderService orderService;
+    StockService stockService;
+
+    @Autowired
+    RedisUtil redisUtil;
 
     @Override
     public void registerMessageListener() {
@@ -51,9 +59,15 @@ public class OrderSyncConsumer extends AbstractConsumer{
 
                     GoodsOrderDto goodsOrderDto = JSONObject.parseObject(json, GoodsOrderDto.class);
                     GoodsOrder goodsOrder = GoodsOrderConvert.goodsOrderDto2Bo(goodsOrderDto);
-                    int save = orderService.save(goodsOrder);
-                    if (Objects.equals(save, 1)){
+
+                    Stock stock = new Stock();
+                    stock.setGoodsId(goodsOrder.getGoodsId());
+                    int i = stockService.updateStock(stock);
+
+                    if (Objects.equals(i, 1)){
                         System.out.println("保存成功");
+                    } else {
+                        redisUtil.set(RedisKeys.OUT_OF_STOCK + stock.getGoodsId(), 0);
                     }
                 } catch (Exception e) {
                     return ConsumeConcurrentlyStatus.RECONSUME_LATER;

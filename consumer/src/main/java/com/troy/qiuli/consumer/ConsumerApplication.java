@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2020-08-31 10:14
  * @desc
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.troy.qiuli")
 @MapperScan("com.troy.qiuli.dao.mapper")
 public class ConsumerApplication {
 

@@ -52,5 +52,6 @@ public abstract class AbstractConsumer {
         consumer.subscribe(getTopic(), getTags());
         this.registerMessageListener();
         consumer.start();
+        System.out.println("consumer starting");
     }
 }

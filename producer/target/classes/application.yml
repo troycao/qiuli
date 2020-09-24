@@ -77,7 +77,7 @@ rocketmq:
   producer:
     isOnOff: on
     # 发送同一类消息的设置为同一个group，保证唯一
-    groupName: TroyGroup
+    groupName: TROY_QIULI_ORDER_GROUP
     # 服务地址
     namesrvAddr: 192.168.56.100:9876
     # 消息最大长度 默认1024*4(4M)
