@@ -35,5 +35,4 @@ public class GoodsOrderConvert {
         return goodsOrderVo;
     }
 
-
 }

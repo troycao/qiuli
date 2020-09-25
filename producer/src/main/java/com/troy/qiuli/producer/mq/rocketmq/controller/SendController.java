@@ -1,19 +1,19 @@
 package com.troy.qiuli.producer.mq.rocketmq.controller;
 
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.util.IdUtil;
-import com.alibaba.fastjson.JSON;
-import com.troy.qiuli.bo.GoodsOrderBO;
 import com.troy.qiuli.common.Result;
 import com.troy.qiuli.common.enums.CodeEnum;
 import com.troy.qiuli.common.utils.Asserts;
 import com.troy.qiuli.producer.mq.rocketmq.model.vo.GoodsOrderRequestVo;
 import com.troy.qiuli.producer.mq.rocketmq.service.OrderService;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ObjectUtils;
-import org.springframework.web.bind.annotation.*;
-
-import java.math.BigDecimal;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author caoqiang
@@ -22,15 +22,17 @@ import java.math.BigDecimal;
  */
 @RestController
 @RequestMapping("/order")
+@Slf4j
 public class SendController {
+
+    private static final Logger logger = LoggerFactory.getLogger(SendController.class);
 
     @Autowired
     OrderService orderService;
 
     @PostMapping("/sendOrder")
     public Result<?> sendOrder (@RequestBody(required = false) GoodsOrderRequestVo goodsOrderVo){
-
-        /*GoodsOrderBO goodsOrderBO = new GoodsOrderBO(
+        /**GoodsOrderBO goodsOrderBO = new GoodsOrderBO(
                 IdUtil.createSnowflake(1,1).nextId(),
                 "大衣",
                 (short) 5,
@@ -43,10 +45,10 @@ public class SendController {
                 ,1L);
 
         System.out.println(JSON.toJSONString(goodsOrderBO));*/
-        //log.info()
+        logger.info("创建订单,输入参数:{}", goodsOrderVo);
         Asserts.isFalse(ObjectUtils.isEmpty(goodsOrderVo), CodeEnum.SYSTEM_PARAS_IS_NULL);
         Result<?> result = orderService.createGoodsOrder(goodsOrderVo);
-        // log.info("");
+        logger.info("创建订单结束,返回数据:{}", result);
         return result;
     }
 }

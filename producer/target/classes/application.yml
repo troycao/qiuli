@@ -96,5 +96,5 @@ xxl:
       appname: qiuli
       ip:
       port: 9999
-      logpath: data/applogs/xxl-job/jobhandler
+      logpath: E:/log/data/applogs/xxl-job/jobhandler
       logretentiondays: 30

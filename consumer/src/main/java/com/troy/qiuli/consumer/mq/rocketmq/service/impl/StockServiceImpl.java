@@ -1,6 +1,6 @@
 package com.troy.qiuli.consumer.mq.rocketmq.service.impl;
 
-import com.troy.qiuli.common.constants.RedisKeys;
+import com.troy.qiuli.common.constants.Constants;
 import com.troy.qiuli.common.enums.CodeEnum;
 import com.troy.qiuli.common.exception.QiuLiException;
 import com.troy.qiuli.common.redis.RedisUtil;
@@ -30,7 +30,7 @@ public class StockServiceImpl implements StockService {
     public int updateStock(Stock stock) {
         Stock stockFromDb = stockMapper.selectForUpdate(stock.getGoodsId());
         if (stockFromDb.getNum() <= 0) {
-            redisUtil.set(RedisKeys.OUT_OF_STOCK + stock.getGoodsId(), "0");
+            redisUtil.set(Constants.OUT_OF_STOCK + stock.getGoodsId(), "0");
             throw new QiuLiException(CodeEnum.STOCK_IS_ZERO);
         }
         return stockMapper.updateBySelective(stock);

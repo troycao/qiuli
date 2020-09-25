@@ -1,7 +1,7 @@
 package com.troy.qiuli.consumer.mq.rocketmq.mq;
 
 import com.alibaba.fastjson.JSONObject;
-import com.troy.qiuli.common.constants.RedisKeys;
+import com.troy.qiuli.common.constants.Constants;
 import com.troy.qiuli.common.enums.MqEnum;
 import com.troy.qiuli.common.redis.RedisUtil;
 import com.troy.qiuli.consumer.mq.rocketmq.convert.GoodsOrderConvert;
@@ -67,7 +67,7 @@ public class OrderSyncConsumer extends AbstractConsumer{
                     if (Objects.equals(i, 1)){
                         System.out.println("保存成功");
                     } else {
-                        redisUtil.set(RedisKeys.OUT_OF_STOCK + stock.getGoodsId(), 0);
+                        redisUtil.set(Constants.OUT_OF_STOCK + stock.getGoodsId(), 0);
                     }
                 } catch (Exception e) {
                     return ConsumeConcurrentlyStatus.RECONSUME_LATER;

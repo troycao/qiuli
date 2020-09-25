@@ -12,23 +12,22 @@ import org.springframework.context.annotation.Configuration;
  * @date 2020-09-23 17:04
  * @desc
  */
-//@Configuration
+@Configuration
 public class RedissonConfig {
 
-    @Value("spring.redis.host")
+    @Value("${spring.redis.host}")
     private String redisAdd;
 
-    @Value("spring.redis.prot")
+    @Value("${spring.redis.port}")
     private String redisPort;
 
-    @Value("spring.redis.database")
+    @Value("${spring.redis.database}")
     private String redisDb;
 
     @Bean
     public RedissonClient config(){
         Config config = new Config();
-//        System.out.println("=================" + redisDb);
-        config.useSingleServer().setAddress(new StringBuffer(redisAdd).append(":").append(redisPort).toString()).setDatabase(Integer.valueOf(redisDb));
+        config.useSingleServer().setAddress(new StringBuffer("redis://").append(redisAdd).append(":").append(redisPort).toString()).setDatabase(Integer.valueOf(redisDb));
         RedissonClient redissonClient = Redisson.create(config);
         return redissonClient;
     }

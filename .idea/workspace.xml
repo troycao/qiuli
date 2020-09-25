@@ -20,39 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef729bcf-78ef-4b43-b1db-33649209436e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/constants/RedisKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redis/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redisson/RedissonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/utils/Asserts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/StockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/troy/qiuli/consumer/mq/rocketmq/service/StockServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/model/convert/GoodsOrderConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/model/vo/GoodsOrderRequestVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/model/vo/GoodsOrderResponseVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/enums/CodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/enums/CodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/exception/QiuLiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/exception/QiuLiException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/convert/GoodsOrderConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/convert/GoodsOrderConvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/mq/AbstractConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/mq/AbstractConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/constants/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/sdk/ali/Authorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/test/java/com/troy/qiuli/producer/mq/rocketmq/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/constants/RedisKeys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redisson/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redisson/RedissonConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/mq/OrderSyncConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/mq/OrderSyncConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/ParamConfigService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/impl/StockServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/troy/qiuli/dao/mapper/StockMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/troy/qiuli/dao/mapper/StockMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/StockMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/StockMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/impl/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/impl/StockServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/job/xxl/config/XxlJobConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/job/xxl/config/XxlJobConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/controller/SendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/controller/SendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/RocketMqService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/RocketMqServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/redis/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/redis/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/model/convert/GoodsOrderConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/model/convert/GoodsOrderConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/src/main/java/com/troy/qiuli/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/src/main/java/com/troy/qiuli/service/OrderBizService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/troy/qiuli/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/troy/qiuli/service/impl/OrderBizServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +101,36 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StockServiceTest.updateStockTest">
+  <component name="RunManager" selected="Application.Authorization">
+    <configuration name="Authorization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.troy.qiuli.producer.sdk.ali.Authorization" />
+      <module name="producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.troy.qiuli.producer.sdk.ali.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderService.saveOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.troy.qiuli.producer.mq.rocketmq.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.troy.qiuli.producer.mq.rocketmq.service" />
+      <option name="MAIN_CLASS_NAME" value="com.troy.qiuli.producer.mq.rocketmq.service.OrderService" />
+      <option name="METHOD_NAME" value="saveOrderTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedisServiceTest.getValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="producer" />
       <extension name="coverage">
@@ -133,37 +142,6 @@
       <option name="PACKAGE_NAME" value="com.troy.qiuli.producer.redis.service" />
       <option name="MAIN_CLASS_NAME" value="com.troy.qiuli.producer.redis.service.RedisServiceTest" />
       <option name="METHOD_NAME" value="getValueTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.troy.qiuli.consumer.mq.rocketmq.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.troy.qiuli.consumer.mq.rocketmq.service" />
-      <option name="MAIN_CLASS_NAME" value="com.troy.qiuli.consumer.mq.rocketmq.service.StockServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockServiceTest.updateStockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.troy.qiuli.consumer.mq.rocketmq.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.troy.qiuli.consumer.mq.rocketmq.service" />
-      <option name="MAIN_CLASS_NAME" value="com.troy.qiuli.consumer.mq.rocketmq.service.StockServiceTest" />
-      <option name="METHOD_NAME" value="updateStockTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,12 +173,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.OrderService.saveOrderTest" />
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="Spring Boot.ProducerApplication" />
+      <item itemvalue="JUnit.RedisServiceTest.getValueTest" />
+      <item itemvalue="Application.Authorization" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ProducerApplication" />
+        <item itemvalue="Application.Authorization" />
         <item itemvalue="Spring Boot.ConsumerApplication" />
-        <item itemvalue="JUnit.StockServiceTest.updateStockTest" />
-        <item itemvalue="JUnit.StockServiceTest" />
+        <item itemvalue="Spring Boot.ProducerApplication" />
+        <item itemvalue="JUnit.OrderService.saveOrderTest" />
         <item itemvalue="JUnit.RedisServiceTest.getValueTest" />
       </list>
     </recent_temporary>
@@ -224,7 +209,7 @@
       <workItem from="1599181376869" duration="1354000" />
       <workItem from="1599441261883" duration="1310000" />
       <workItem from="1599699844774" duration="1274000" />
-      <workItem from="1600589362527" duration="42635000" />
+      <workItem from="1600589362527" duration="60713000" />
     </task>
     <servers />
   </component>
@@ -247,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1600669122369" />
-    <state x="249" y="0" key="#Project_Structure" timestamp="1600852153144">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1600933933925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1600852153144" />
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1600933933925" />
     <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1600852801791">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -263,14 +248,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="279" width="552" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1600852947860" />
-    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600863544134">
+    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600928032608">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1600863544134" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600853118054">
+    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1600928032608" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600930695719">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600853118054" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600930695719" />
     <state x="510" y="121" key="#xdebugger.evaluate" timestamp="1600766651257">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -279,38 +264,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600597808808" />
-    <state width="1203" height="312" key="GridCell.Tab.0.bottom" timestamp="1600909839235">
+    <state width="1203" height="399" key="GridCell.Tab.0.bottom" timestamp="1601020095757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="312" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600909839235" />
-    <state width="1203" height="312" key="GridCell.Tab.0.center" timestamp="1600909839234">
+    <state width="1203" height="399" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
+    <state width="1203" height="399" key="GridCell.Tab.0.center" timestamp="1601020095757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="312" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600909839234" />
-    <state width="1203" height="312" key="GridCell.Tab.0.left" timestamp="1600909839234">
+    <state width="1203" height="399" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
+    <state width="1203" height="399" key="GridCell.Tab.0.left" timestamp="1601020095756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="312" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600909839234" />
-    <state width="1203" height="312" key="GridCell.Tab.0.right" timestamp="1600909839234">
+    <state width="1203" height="399" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601020095756" />
+    <state width="1203" height="399" key="GridCell.Tab.0.right" timestamp="1601020095757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="312" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600909839234" />
-    <state width="1203" height="312" key="GridCell.Tab.1.bottom" timestamp="1600909839235">
+    <state width="1203" height="399" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
+    <state width="1203" height="399" key="GridCell.Tab.1.bottom" timestamp="1601020095757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="312" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600909839235" />
-    <state width="1203" height="312" key="GridCell.Tab.1.center" timestamp="1600909839235">
+    <state width="1203" height="399" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
+    <state width="1203" height="399" key="GridCell.Tab.1.center" timestamp="1601020095757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="312" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600909839235" />
-    <state width="1203" height="312" key="GridCell.Tab.1.left" timestamp="1600909839235">
+    <state width="1203" height="399" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
+    <state width="1203" height="399" key="GridCell.Tab.1.left" timestamp="1601020095757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="312" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600909839235" />
-    <state width="1203" height="312" key="GridCell.Tab.1.right" timestamp="1600909839235">
+    <state width="1203" height="399" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
+    <state width="1203" height="399" key="GridCell.Tab.1.right" timestamp="1601020095757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="312" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600909839235" />
+    <state width="1203" height="399" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
     <state width="1203" height="282" key="GridCell.Tab.2.bottom" timestamp="1600850457841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -327,14 +312,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1203" height="282" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1600850457841" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1598963529205">
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1601019631058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1598963529205" />
-    <state x="569" y="114" key="RollbackChangesDialog" timestamp="1600852859236">
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1601019631058" />
+    <state x="569" y="114" key="RollbackChangesDialog" timestamp="1600929219202">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="569" y="114" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600852859236" />
+    <state x="569" y="114" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600929219202" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1599115411616">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
