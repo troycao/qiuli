@@ -1,0 +1,4 @@
+com\troy\qiuli\generator\CodeGenerator.class
+com\troy\qiuli\generator\MysqlPagePlugin.class
+com\troy\qiuli\generator\CommonCodeGenerator.class
+com\troy\qiuli\generator\DBCommentGenerator.class

@@ -1,0 +1,6 @@
+com\troy\qiuli\consumer\mq\rocketmq\mq\OrderSyncConsumer.class
+com\troy\qiuli\consumer\mq\rocketmq\service\StockService.class
+com\troy\qiuli\consumer\mq\rocketmq\convert\GoodsOrderConvert.class
+com\troy\qiuli\consumer\mq\rocketmq\mq\AbstractConsumer.class
+com\troy\qiuli\consumer\ConsumerApplication.class
+com\troy\qiuli\consumer\mq\rocketmq\service\impl\StockServiceImpl.class

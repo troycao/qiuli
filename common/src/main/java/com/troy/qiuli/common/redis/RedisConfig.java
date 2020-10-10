@@ -31,7 +31,6 @@ public class RedisConfig {
      * @return
      */
     @Bean
-    @SuppressWarnings("all")
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
         //redisConnectionFactory.setDatabase(0);
         RedisTemplate<String, Object> template = new RedisTemplate<String, Object>();

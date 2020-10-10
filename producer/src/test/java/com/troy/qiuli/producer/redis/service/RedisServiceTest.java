@@ -30,12 +30,12 @@ public class RedisServiceTest {
     @Test
     public void deleteTest(){
         for (int i = 0; i < 100; i++) {
-            redisService.delete("user_dfbb");
+            redisService.delete("user_1301415598764462080");
         }
     }
 
     @Test
     public void getValueTest(){
-        System.out.println(redisService.getValue("user_1301415596734418944"));
+        System.out.println(redisService.getValue("user_1301415598764462080"));
     }
 }

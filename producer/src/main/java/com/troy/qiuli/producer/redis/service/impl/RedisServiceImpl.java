@@ -32,8 +32,6 @@ public class RedisServiceImpl implements IRedisService {
         redisTemplate.opsForValue().append(key, JSON.toJSONString(user));
     }
 
-
-
     @Override
     public Map<?, ?> list(String key) {
         return null;

@@ -20,19 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef729bcf-78ef-4b43-b1db-33649209436e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/sdk/ali/Authorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/test/java/com/troy/qiuli/producer/mq/rocketmq/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/constants/RedisKeys.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redisson/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redisson/RedissonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/mq/OrderSyncConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/mq/OrderSyncConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/impl/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/troy/qiuli/consumer/mq/rocketmq/service/impl/StockServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/controller/SendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/controller/SendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/model/convert/GoodsOrderConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/model/convert/GoodsOrderConvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/base/GenericParadigmMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/base/algorithm/BitMapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redis/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/common/redis/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/redis/service/impl/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/redis/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/sdk/ali/Authorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/sdk/ali/Authorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/test/java/com/troy/qiuli/producer/redis/service/RedisServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/test/java/com/troy/qiuli/producer/redis/service/RedisServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,13 +94,26 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Authorization">
-    <configuration name="Authorization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.troy.qiuli.producer.sdk.ali.Authorization" />
-      <module name="producer" />
+  <component name="RunManager" selected="Application.BitMapSort">
+    <configuration name="BitMapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.troy.qiuli.base.algorithm.BitMapSort" />
+      <module name="common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.troy.qiuli.producer.sdk.ali.*" />
+          <option name="PATTERN" value="com.troy.qiuli.base.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenericParadigmMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.troy.qiuli.base.GenericParadigmMethod" />
+      <module name="common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.troy.qiuli.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,19 +153,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.troy.qiuli.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.troy.qiuli.consumer.ConsumerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="producer" />
       <extension name="coverage">
@@ -174,16 +167,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.OrderService.saveOrderTest" />
-      <item itemvalue="Spring Boot.ConsumerApplication" />
-      <item itemvalue="Spring Boot.ProducerApplication" />
       <item itemvalue="JUnit.RedisServiceTest.getValueTest" />
-      <item itemvalue="Application.Authorization" />
+      <item itemvalue="JUnit.OrderService.saveOrderTest" />
+      <item itemvalue="Spring Boot.ProducerApplication" />
+      <item itemvalue="Application.GenericParadigmMethod" />
+      <item itemvalue="Application.BitMapSort" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Authorization" />
-        <item itemvalue="Spring Boot.ConsumerApplication" />
+        <item itemvalue="Application.BitMapSort" />
+        <item itemvalue="Application.GenericParadigmMethod" />
         <item itemvalue="Spring Boot.ProducerApplication" />
         <item itemvalue="JUnit.OrderService.saveOrderTest" />
         <item itemvalue="JUnit.RedisServiceTest.getValueTest" />
@@ -209,7 +202,10 @@
       <workItem from="1599181376869" duration="1354000" />
       <workItem from="1599441261883" duration="1310000" />
       <workItem from="1599699844774" duration="1274000" />
-      <workItem from="1600589362527" duration="60713000" />
+      <workItem from="1600589362527" duration="61403000" />
+      <workItem from="1601168525026" duration="600000" />
+      <workItem from="1602211061483" duration="3187000" />
+      <workItem from="1602292768307" duration="7033000" />
     </task>
     <servers />
   </component>
@@ -226,6 +222,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1600669122369">
@@ -264,38 +261,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600597808808" />
-    <state width="1203" height="399" key="GridCell.Tab.0.bottom" timestamp="1601020095757">
+    <state width="1493" height="124" key="GridCell.Tab.0.bottom" timestamp="1602329483679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="399" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
-    <state width="1203" height="399" key="GridCell.Tab.0.center" timestamp="1601020095757">
+    <state width="1493" height="124" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602329483679" />
+    <state width="1493" height="124" key="GridCell.Tab.0.center" timestamp="1602329483678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="399" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
-    <state width="1203" height="399" key="GridCell.Tab.0.left" timestamp="1601020095756">
+    <state width="1493" height="124" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602329483678" />
+    <state width="1493" height="124" key="GridCell.Tab.0.left" timestamp="1602329483678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="399" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601020095756" />
-    <state width="1203" height="399" key="GridCell.Tab.0.right" timestamp="1601020095757">
+    <state width="1493" height="124" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602329483678" />
+    <state width="1493" height="124" key="GridCell.Tab.0.right" timestamp="1602329483679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="399" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
-    <state width="1203" height="399" key="GridCell.Tab.1.bottom" timestamp="1601020095757">
+    <state width="1493" height="124" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602329483679" />
+    <state width="1493" height="124" key="GridCell.Tab.1.bottom" timestamp="1602329484174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="399" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
-    <state width="1203" height="399" key="GridCell.Tab.1.center" timestamp="1601020095757">
+    <state width="1493" height="124" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602329484174" />
+    <state width="1493" height="124" key="GridCell.Tab.1.center" timestamp="1602329484174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="399" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
-    <state width="1203" height="399" key="GridCell.Tab.1.left" timestamp="1601020095757">
+    <state width="1493" height="124" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602329484174" />
+    <state width="1493" height="124" key="GridCell.Tab.1.left" timestamp="1602329484174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="399" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
-    <state width="1203" height="399" key="GridCell.Tab.1.right" timestamp="1601020095757">
+    <state width="1493" height="124" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602329484174" />
+    <state width="1493" height="124" key="GridCell.Tab.1.right" timestamp="1602329484174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1203" height="399" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601020095757" />
+    <state width="1493" height="124" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602329484174" />
     <state width="1203" height="282" key="GridCell.Tab.2.bottom" timestamp="1600850457841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -328,6 +325,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1598854058253" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602212639083">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602212639083" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1600760120016">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -352,9 +353,35 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600691609752" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600866484137">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602212810678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600866484137" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602212810678" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/producer/src/main/java/com/troy/qiuli/producer/mq/rocketmq/service/impl/OrderServiceImpl.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/Develop/mvnrepository/org/redisson/redisson/3.13.4/redisson-3.13.4-sources.jar!/org/redisson/RedissonMultiLock.java</url>
+          <line>276</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/base/algorithm/BitMapSort.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/troy/qiuli/base/algorithm/BitMapSort.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
