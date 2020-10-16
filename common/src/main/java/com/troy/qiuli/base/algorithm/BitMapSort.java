@@ -20,6 +20,7 @@ public class BitMapSort {
     public static void main(String args[]) {
         new BitMapSort().findDuplicate();
         new BitMapSort().findDup_jdk();
+        while (true);
     }
 
     public void findDup_jdk() {

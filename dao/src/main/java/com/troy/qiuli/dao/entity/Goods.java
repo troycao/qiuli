@@ -1,19 +1,17 @@
 package com.troy.qiuli.dao.entity;
 
 import java.math.BigDecimal;
-
-import com.troy.qiuli.dao.AbstractBaseEntity;
 import lombok.Data;
 import lombok.ToString;
 
 /**
  * goods
  * @author caoqiang
- * @date 2020-09-02 09:52:05
+ * @date 2020-10-16 11:59:02
 */
 @Data
 @ToString
-public class Goods extends AbstractBaseEntity {
+public class Goods {
     /**
      * BIGINT(19) 必填<br>
      * 

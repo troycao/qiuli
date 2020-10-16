@@ -1,19 +1,18 @@
 package com.troy.qiuli.dao.entity;
 
-import com.troy.qiuli.dao.AbstractBaseEntity;
 import lombok.Data;
 import lombok.ToString;
 
 /**
  * stock
  * @author caoqiang
- * @date 2020-09-02 09:52:05
+ * @date 2020-10-16 11:59:02
 */
 @Data
 @ToString
-public class Stock extends AbstractBaseEntity {
+public class Stock {
     /**
-     * BIGINT(19)<br>
+     * BIGINT(19) 必填<br>
      * 
      */
     private Long id;
